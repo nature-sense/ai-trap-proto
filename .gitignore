@@ -1,0 +1,10 @@
+.idea
+.venv
+venv
+sessions
+model
+*.jpg
+.DS_Store
+__pycache__
+ComputeLibrary
+.cache
