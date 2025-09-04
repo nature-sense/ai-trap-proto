@@ -1,15 +1,15 @@
 syntax = "proto3";
 
-message SessionMsg {
+message Session {
   string session = 1;
 }
 
-message SessionDetailsMsg {
+message SessionDetails {
   string session = 1;
   int32 detections = 2;
 }
 
-message DetectionMsg {
+message Detection {
   string session = 1;
   int32 detection = 2;
   int64 created = 3;

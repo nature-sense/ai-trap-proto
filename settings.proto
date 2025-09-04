@@ -1,6 +1,6 @@
 syntax = "proto3";
 
-message SettingsMsg {
+message Settings {
   string trap_name = 1;
   string wifi_ssid = 2;
   string wifi_password = 3;

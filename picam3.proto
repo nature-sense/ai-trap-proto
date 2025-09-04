@@ -6,17 +6,17 @@ enum AutofocusMode {
   triggered = 2;
 }
 
-message StateMsg {
+message ControlState {
   AutofocusMode mode = 1;
   double position = 2;
 }
 
-message SetModeMsg {
-    AutofocusMode mode = 1;
+message SetMode {
+  AutofocusMode mode = 1;
 }
 
-message SetPositionMsg {
-    double position = 2;
+message SetPosition {
+  double position = 1;
 }
 
-message TriggerMsg {}
+message Trigger {}
