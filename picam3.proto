@@ -6,7 +6,7 @@ enum AutofocusMode {
   triggered = 2;
 }
 
-message ControlState {
+message FrameMetadata {
   AutofocusMode mode = 1;
   double position = 2;
 }
@@ -19,4 +19,9 @@ message SetPosition {
   double position = 1;
 }
 
-message Trigger {}
+//message Trigger {}
+
+message Frame {
+  FrameMetadata metatata = 1;
+  bytes frame = 2;
+}
