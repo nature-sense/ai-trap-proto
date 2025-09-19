@@ -22,6 +22,6 @@ message SetPosition {
 //message Trigger {}
 
 message Frame {
-  FrameMetadata metatata = 1;
+  FrameMetadata metadata = 1;
   bytes frame = 2;
 }
