@@ -6,8 +6,15 @@ enum AutofocusMode {
   triggered = 2;
 }
 
+enum AutofocusState {
+  idle = 0;
+  scanning = 1;
+  focussed = 2;
+  failed = 3;
+}
+
 message FrameMetadata {
-  AutofocusMode mode = 1;
+  AutofocusState afState = 1;
   double position = 2;
 }
 
