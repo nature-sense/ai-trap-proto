@@ -28,7 +28,7 @@ message SetPosition {
 
 //message Trigger {}
 
-message Frame {
+message Picam3Frame {
   FrameMetadata metadata = 1;
   bytes frame = 2;
 }

@@ -9,3 +9,7 @@ message StateWithSession {
   string session = 2;
 }
 
+message CameraType {
+  string type = 1;
+}
+
