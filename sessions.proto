@@ -2,11 +2,17 @@ syntax = "proto3";
 
 message Session {
   string session = 1;
+  bool active = 2;
+  int64 opened = 3;
+  optional int64 closed = 4;
 }
 
 message SessionDetails {
   string session = 1;
-  int32 detections = 2;
+  bool active = 2;
+  int64 opened = 3;
+  optional int64 closed = 4;
+  int32 detections = 5;
 }
 
 message Detection {
