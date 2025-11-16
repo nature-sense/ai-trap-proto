@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+message State {
+  bool state = 1;
+}
+
+message StateWithSession {
+  bool state = 1;
+  string session = 2;
+}
+
+message CameraType {
+  string type = 1;
+}
+
